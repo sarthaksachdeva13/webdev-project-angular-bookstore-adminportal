@@ -20,7 +20,7 @@ export class EditBookComponent implements OnInit {
     disabled;
 
     constructor(
-        private uploadImageService: UploadImageService,
+        public uploadImageService: UploadImageService,
         private editBookService: EditBookService,
         private getBookService: GetBookService,
         private route: ActivatedRoute,

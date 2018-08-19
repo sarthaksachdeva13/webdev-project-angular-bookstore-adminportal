@@ -12,8 +12,11 @@ export class AddNewBookComponent implements OnInit {
 
     newBook: Book = new Book();
     bookAdded: boolean;
+    checked;
+    color;
+    disabled;
 
-    constructor(private addBookService: AddBookService, private uploadImageService: UploadImageService) {
+    constructor(private addBookService: AddBookService, public uploadImageService: UploadImageService) {
     }
 
     onSubmit() {

@@ -1,9 +1,9 @@
 <md-toolbar class="mat-primary">
-	<h3 [style.color]="'white'">Admin Portal</h3>
-	<span class="example-spacer"></span>
-	<span [hidden]="!loggedIn"><a md-button routerLink="/bookList">View Book List</a></span>
-	<span [hidden]="!loggedIn"><a md-button routerLink="/addNewBook">Add a Book</a></span>
-	<span [hidden]="!loggedIn"><a md-button (click)="logout()">Logout</a></span>
+    <a id="storeLink" md-button href="http://ficstore.herokuapp.com">Store Front</a>
+    <span class="example-spacer"></span>
+    <span [hidden]="!loggedIn"><a md-button routerLink="/bookList">View Book List</a></span>
+    <span [hidden]="!loggedIn"><a md-button routerLink="/addNewBook">Add a Book</a></span>
+    <span [hidden]="!loggedIn"><a md-button (click)="logout()">Logout</a></span>
 </md-toolbar>
 
 

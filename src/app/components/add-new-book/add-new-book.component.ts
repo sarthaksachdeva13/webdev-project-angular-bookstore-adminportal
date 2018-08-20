@@ -8,6 +8,7 @@ import {UploadImageService} from '../../services/upload-image.service';
     templateUrl: './add-new-book.component.html',
     styleUrls: ['./add-new-book.component.css']
 })
+
 export class AddNewBookComponent implements OnInit {
 
     newBook: Book = new Book();

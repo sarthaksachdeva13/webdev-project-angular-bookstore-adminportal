@@ -1,10 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Book} from '../../models/book';
 import {Router} from '@angular/router';
-import {LoginService} from '../../services/login.service';
 import {GetBookListService} from '../../services/get-book-list.service';
 import {RemoveBookService} from '../../services/remove-book.service';
-
 import {MdDialog, MdDialogRef} from '@angular/material';
 
 @Component({
@@ -17,7 +15,7 @@ export class BookListComponent implements OnInit {
     checked: boolean;
     bookList: Book[];
     allChecked: boolean;
-    removeBookList: Book[] = new Array();
+    removeBookList: Book[] = [];
 
     constructor(
         private getBookListService: GetBookListService,

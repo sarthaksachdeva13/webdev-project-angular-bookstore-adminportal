@@ -1,21 +1,21 @@
 import {Injectable} from '@angular/core';
 import {Http, Headers} from '@angular/http';
-import {Book} from '../models/book';
 
 @Injectable()
-export class AddBookService {
+export class RemoveUserService {
 
     constructor(private http: Http) {
     }
 
-    sendBook(book: Book) {
-        const url = 'http://localhost:8181/book/add';
+    sendUser(userId: number) {
+        const url = 'http://localhost:8181/user/remove';
+
         const headers = new Headers({
             'Content-Type': 'application/json',
             'x-auth-token': localStorage.getItem('xAuthToken')
         });
 
-        return this.http.post(url, JSON.stringify(book), {headers: headers});
+        return this.http.post(url, userId, {headers: headers});
     }
 
 }

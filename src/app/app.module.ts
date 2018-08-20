@@ -26,6 +26,8 @@ import {EditBookComponent} from './components/edit-book/edit-book.component';
 import {UserListComponent} from './components/user-list/user-list.component';
 import {GetUserListService} from './services/get-user-list.service';
 import {RemoveUserService} from './services/remove-user.service';
+import { AddNewUserComponent } from './components/add-new-user/add-new-user.component';
+import {AddUserService} from './services/add-user.service';
 
 @NgModule({
     declarations: [
@@ -37,7 +39,8 @@ import {RemoveUserService} from './services/remove-user.service';
         DialogResultExampleDialog,
         ViewBookComponent,
         EditBookComponent,
-        UserListComponent
+        UserListComponent,
+        AddNewUserComponent
     ],
     imports: [
         BrowserModule,
@@ -56,7 +59,8 @@ import {RemoveUserService} from './services/remove-user.service';
         EditBookService,
         RemoveBookService,
         GetUserListService,
-        RemoveUserService
+        RemoveUserService,
+        AddUserService
     ],
     bootstrap: [AppComponent, DialogResultExampleDialog]
 })
